@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>設定</title>
+  <style>
+    :root {
+      --bg: #f5f2ee;
+      --accent: #0080ff;
+    }
+    body {
+      margin: 0;
+      font-family: "Helvetica Neue", sans-serif;
+      background: var(--bg);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .phone {
+      width: 360px;
+      height: 720px;
+      background: #fff;
+      border-radius: 30px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    .header {
+      background: var(--accent);
+      color: #fff;
+      padding: 16px;
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+    }
+    .content {
+      flex: 1;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .setting-item {
+      background: #f9f9f9;
+      border-radius: 12px;
+      padding: 14px 18px;
+      font-size: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      transition: background 0.2s ease;
+    }
+    .setting-item:hover {
+      background: #eee;
+    }
+    .footer {
+      padding: 10px;
+      text-align: center;
+    }
+    .btn {
+      background: var(--accent);
+      color: white;
+      padding: 10px 16px;
+      font-size: 14px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+    .btn:hover {
+      background: #005fcc;
+    }
+  </style>
+</head>
+<body>
+  <div class="phone">
+    <div class="header">設定</div>
+    <div class="content">
+      <div class="setting-item">
+        言語設定 <span>日本語</span>
+      </div>
+      <div class="setting-item">
+        通知 <span>オン</span>
+      </div>
+      <div class="setting-item">
+        テーマ <span>ライト</span>
+      </div>
+      <div class="setting-item" onclick="location.href='terms.html'">
+        利用規約 <span style="color: gray;">▶</span>
+      </div>
+      <div class="setting-item">
+        バージョン <span>v1.0.0</span>
+      </div>
+    </div>
+    <div class="footer">
+      <button class="btn" onclick="location.href='index.html'">ホームに戻る</button>
+    </div>
+  </div>
+</body>
+</html>
