@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>利用規約</title>
+  <style>
+    :root {
+      --bg: #fff;
+      --accent: #0080ff;
+    }
+    body {
+      margin: 0;
+      font-family: "Helvetica Neue", sans-serif;
+      background: var(--bg);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .phone {
+      width: 360px;
+      height: 720px;
+      background: #fff;
+      border-radius: 30px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    .header {
+      background: var(--accent);
+      color: #fff;
+      padding: 16px;
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+    }
+    .content {
+      flex: 1;
+      padding: 20px;
+      overflow-y: auto;
+      font-size: 14px;
+      line-height: 1.6;
+      color: #333;
+    }
+    .footer {
+      padding: 10px;
+      text-align: center;
+    }
+    .btn {
+      background: var(--accent);
+      color: white;
+      padding: 10px 16px;
+      font-size: 14px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+    .btn:hover {
+      background: #005fcc;
+    }
+  </style>
+</head>
+<body>
+  <div class="phone">
+    <div class="header">利用規約</div>
+    <div class="content">
+      <p>このアプリをご利用いただく前に、以下の利用規約をお読みください。</p>
+
+      <p>・本アプリは個人の利用を目的としたものであり、無断での商用利用、転載、再配布を禁止します。</p>
+      <p>・本アプリで作成されたコンテンツは、著作権法に基づき保護されます。</p>
+      <p>・ユーザーが投稿・入力したデータは、運営によって監視・削除される場合があります。</p>
+      <p>・アプリの機能・内容は予告なく変更または終了されることがあります。</p>
+      <p>・運営は、アプリの利用に関連して発生するいかなる損害についても責任を負いません。</p>
+
+      <p>アプリをご利用いただいた時点で、これらの利用規約に同意したものとみなされます。</p>
+    </div>
+    <div class="footer">
+      <button class="btn" onclick="location.href='settings.html'">戻る</button>
+    </div>
+  </div>
+</body>
+</html>
